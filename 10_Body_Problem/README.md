@@ -8,11 +8,11 @@ The optimal delta-v of the mission was calculated to be 6.3 km/s with an elapsed
 
 Figure: Porkchop Plot of Launch Window
 
-
+<img width="1904" height="987" alt="Earth-Jupiter Lauch Window" src="https://github.com/user-attachments/assets/87241a79-7dbc-4205-9234-fbab567ab5b7" />
 
 Figure: Total Trajectory of Satellite
 
-
+<img width="1904" height="987" alt="Transfer to Jupiter (Final Solution)" src="https://github.com/user-attachments/assets/5d5e6c11-9aba-4e1a-9729-45750883b57d" />
 
 PERMISSION TO USE CODE:
 
