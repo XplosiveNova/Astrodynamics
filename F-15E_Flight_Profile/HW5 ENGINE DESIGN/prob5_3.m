@@ -34,7 +34,7 @@ j=1;
 
 for altitude = alt_range   
 
-    [~, propS.ToR, propS.PoR, ~] = atm_model(altitude * 0.3048);
+    [~, propS.ToR, propS.PoR, ~] = atm_model(altitude, units);
 
     for Mach = Mach_range
 
@@ -73,6 +73,7 @@ ylabel("F _{(lbf)}", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
 legend({'Alt = 0 ft', 'Alt = 10,000 ft', 'Alt = 25,000 ft', 'Alt = 35,000 ft', 'Alt = 50,000 ft'}, ...
     'Location','best');
+theme 'light'
 
 figure(2)
 plot(Mach_range, SFC_matrix(1:5,:))
@@ -83,14 +84,15 @@ ylabel("SFC _{(lbm/hr-lbf)}", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 
 grid on
 legend({'Alt = 0 ft', 'Alt = 10,000 ft', 'Alt = 25,000 ft', 'Alt = 35,000 ft', 'Alt = 50,000 ft'}, ...
     'Location','best');
+theme 'light'
 
-% AB = ON
+%% AB = ON
 
 ABswitch = "ON";
 
 for altitude = alt_range   
     
-    [~, propS.ToR, propS.PoR, ~] = atm_model(altitude * 0.3048);
+    [~, propS.ToR, propS.PoR, ~] = atm_model(altitude, units);
 
     for Mach = Mach_range
     
@@ -129,6 +131,7 @@ ylabel("F _{(lbf)}", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
 legend({'Alt = 0 ft', 'Alt = 10,000 ft', 'Alt = 25,000 ft', 'Alt = 35,000 ft', 'Alt = 50,000 ft'}, ...
     'Location','best');
+theme 'light'
 
 figure(4)
 plot(Mach_range, SFC_matrix(6:10,:))
@@ -139,3 +142,4 @@ ylabel("SFC _{(lbm/hr-lbf)}", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 
 grid on
 legend({'Alt = 0 ft', 'Alt = 10,000 ft', 'Alt = 25,000 ft', 'Alt = 35,000 ft', 'Alt = 50,000 ft'}, ...
     'Location','best');
+theme 'light'

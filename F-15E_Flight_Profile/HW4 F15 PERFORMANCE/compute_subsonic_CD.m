@@ -5,7 +5,10 @@ function [CD, CDo, CDi, K] = compute_subsonic_CD(CL, Mach, G)
     
     G.SW_C4 = G.SW_C4 * pi / 180; % [rad] Qauter Chord Sweep Angle
 
-    K = 1/(pi * G.AR * G.e);
+    e = (1 - 0.045 * G.AR^0.68) * (1 - 0.227 * G.SW_C4^1.615);
+    % [] Planform Efficiency Factor
+
+    K = 1/(pi * G.AR * e);
     % [] Viscous and Inviscid Lift Induced Lift Drag Factor
 
     CDi = K * CL^2;

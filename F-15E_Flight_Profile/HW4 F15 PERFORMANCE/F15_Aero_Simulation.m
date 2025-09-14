@@ -13,7 +13,6 @@ addpath(HW3Path);
 R = 287.05;
 gamma = 1.4;
 alt = 3 * 10^4;     % [ft] altitude
-alt = alt * 0.3048; % [m] altitude, SI
 
 G.AR = 3.02;        % [] Aspect Ratio
 G.TR = 0.25;        % [] Taper Ratio
@@ -24,11 +23,11 @@ G.CLA = 2*pi;       % [rad^-1] Lift-Curve Slope of 2D Airfoil
 G.Iw = 0;           % [deg] Incidence Angle of Wing
 G.A0 = -0.5;        % [deg] Zero-Lift AOA
 G.S = 608;          % [ft] Reference Area
-G.S = G.S * 0.3048; % [m] Reference Area, SI
 G.planform_type = "delta";
 G.leading_edge_type = "sharp";
 G.M_CR = 0.9;
 G.M_SS = 1.3;
+G.units = 'EN';
 j=1;
 
 %% (1-3)
@@ -39,7 +38,7 @@ CL_range = zeros(1,n(2));
 
 for M = [0.6, 0.9, 1.3]
 
-    [~, ~, Q, ~] = flight_condition(alt, "", M);
+    [~, ~, Q, ~] = flight_condition(alt, "", M, G.units);
     i=1;
 
     for alpha = aoarange
@@ -58,6 +57,7 @@ for M = [0.6, 0.9, 1.3]
     ylim([0, 1.25])
     yticks(0:.125:1.25)
     grid on
+    theme 'light'
 
     j = j+1;
 
@@ -70,7 +70,7 @@ e_range = zeros(1,n(2));
 
 for M = [0.9, 2]
 
-    [~, ~, Q, ~] = flight_condition(alt, "na", M);
+    [~, ~, Q, ~] = flight_condition(alt, "na", M, G.units);
     i=1;
 
     for alpha = aoarange
@@ -87,6 +87,7 @@ for M = [0.9, 2]
     xlabel("C_D", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
     ylabel("C_L", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
     grid on
+    theme 'light'
 
     j = j+1;
 
@@ -102,6 +103,7 @@ for M = [0.9, 2]
         ylim([0, 1])
         yticks(0: .1: 1)
         grid on
+        theme 'light'
         j = j+1;
 
     end
@@ -116,11 +118,11 @@ CLa_range = zeros(1,n(2));
 CDo_range = zeros(1,n(2));
 CDi_range = zeros(1,n(2));
 K_range = zeros(1,n(2));
-
+i = 1;
 
 for M = Mach_range
 
-    [~, ~, Q, ~] = flight_condition(alt, "na", M);
+    [~, ~, Q, ~] = flight_condition(alt, "na", M, G.units);
 
     [~, ~, ~, CLa, ~, CDo, CDi, K] = aero_conflict_func(M, alpha, Q, G);
     CLa_range(1,i) = CLa;
@@ -132,11 +134,12 @@ for M = Mach_range
 end
 
 figure(j)
-plot(Mach_range(1,:),CLa_range(1,:), '.-black', 'MarkerSize', 8)
+plot(Mach_range,CLa_range, '.-k', 'MarkerSize', 8)
 title('C_L_A vs Mach', "FontSize", 20, 'FontWeight', 'bold', 'FontName', 'Arial')
 xlabel("Mach Number", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 ylabel("C_L_A", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
+theme 'light'
 
 j = j + 1;
 
@@ -146,6 +149,7 @@ title('C_D_o vs Mach', "FontSize", 20, 'FontWeight', 'bold', 'FontName', 'Arial'
 xlabel("Mach Number", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 ylabel("C_D_o", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
+theme 'light'
 
 j = j + 1;
 
@@ -155,6 +159,7 @@ title('C_D_i vs Mach', "FontSize", 20, 'FontWeight', 'bold', 'FontName', 'Arial'
 xlabel("Mach Number", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 ylabel("C_D_i", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
+theme 'light'
 
 j = j + 1;
 
@@ -164,6 +169,7 @@ title('K vs Mach', "FontSize", 20, 'FontWeight', 'bold', 'FontName', 'Arial')
 xlabel("Mach Number", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 ylabel("K", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
 grid on
+theme 'light'
 
 j = j + 1;
 
@@ -176,7 +182,7 @@ CL_range = zeros(1,n(2));
 
 for M = Mach_range
 
-    [~, ~, Q, ~] = flight_condition(alt, "na", M);
+    [~, ~, Q, ~] = flight_condition(alt, "na", M, G.units);
 
     i=1;
 
@@ -201,6 +207,7 @@ for M = Mach_range
     'Location','northwest');
     lgd.NumColumns = 3;
     hold on
+    theme 'light'
 
 end
 
@@ -212,7 +219,7 @@ CD_range = zeros(1,n(2));
 
 for M = Mach_range
 
-    [~, ~, Q, ~] = flight_condition(alt, "na", M);
+    [~, ~, Q, ~] = flight_condition(alt, "na", M, G.units);
 
     i=1;
 
@@ -237,6 +244,7 @@ for M = Mach_range
     'Location','northwest');
     lgd.NumColumns = 3;
     hold on
+    theme 'light'
 
 end
 

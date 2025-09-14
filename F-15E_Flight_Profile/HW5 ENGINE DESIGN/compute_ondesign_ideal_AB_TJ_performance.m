@@ -6,22 +6,21 @@ if units == "EN"
     gc_1 = 25037;
     gc_2 = 32.2;
     gc_3 = 60^2;
-    gc_4 = 0.3048;
-    gc_5 = 1.8;
+    gc_4 = 1.8;
+    gc_5 = 4.1868;
 else
     gc_1 = 1000;
     gc_2 = 1;
     gc_3 = 1;
     gc_4 = 1;
-    gc_5 = 1;
 end
 
-alt = alt * gc_4;
-[~, To, ~, ~] = atm_model(alt);
-To = To * gc_5;
+[~, To, ~, ~] = atm_model(alt, units);
+To = To * gc_4;
+Cp = Cp * gc_5;
 
 R = Cp * (gamma-1)/gamma;
-a0 = sqrt(gamma*R*To*gc_1);
+a0 = sqrt(gamma*R*To*gc_4);
 tau_r = 1 + (gamma-1)/2 * Mach^2;
 tau_l = To_4 /To;
 tau_ab = To_7/To;

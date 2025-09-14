@@ -1,11 +1,9 @@
 function plot_lift(Mach_Values, G)
 
-    % USED FOR PROBLEM 4.2
-
-    n = 16;
+    n = 100;
     AOA_range = linspace(0, 15, n); % [deg] AOA Range
     Graph_Matrix = zeros(n+1,2);
-    colors = ['r', 'b'];
+    colors = ['k', 'r'];
     j = 1;
 
     for Mach = Mach_Values
@@ -27,19 +25,19 @@ function plot_lift(Mach_Values, G)
         end
 
         figure(2)
-        plot(Graph_Matrix(:,1), Graph_Matrix(:,2), 'LineStyle','none', 'Marker', '.', 'MarkerSize', 16, 'Color', colors(j))
+        plot(Graph_Matrix(:,1), Graph_Matrix(:,2), 'LineStyle','none', 'Marker', '.', 'MarkerSize', 8, 'Color', colors(j))
         hold on
         j = j+1;
     end
 
     title('C_L vs {\alpha}', "FontSize", 20, 'FontWeight', 'bold', 'FontName', 'Arial')
     xlabel("{\alpha} _{(deg)}", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
-    xlim([0, n])
-    xticks(0:1:n)
+    xlim([0, 16])
+    xticks(0:2:16)
     ylabel("C_L", "FontSize", 16, 'FontWeight', 'bold', 'FontName', 'Arial')
     ylim([0, 1.5])
     yticks(0:.125:1.5)
     grid on
-    
+    theme 'light'
 
 end

@@ -9,22 +9,22 @@ HW4Path = fullfile(currentFolder, '..', 'HW4 F15 PERFORMANCE');
 addpath(HW4Path);
 
 Mach = 2;
-alt = 50000;
+alt = 50000; %[ft] Altitude
 h_pr = 18400;
 Cp = .24;
 gamma = 1.4;
 mdot_o = 44.093;
 
-W = 366918; %lbf
-G.S = 4600;
+W = 366918; % [lbf] Weight
+G.S = 4600; % [ft^2] Reference Aero
 To7 = 3000;
 units = "EN";
 ABswitch = "OFF";
 
-[~, V, Q, ~] = flight_condition(alt * 0.3048, "", Mach);
-CL = W * 4.448 / (Q * G.S * 0.3048^2);
+[V, ~, Q, ~] = flight_condition(alt, "", Mach, units);
+CL = W / (Q * 32.174 * G.S);
 CD = 0.91185/100;
-D = Q * G.S * 0.3048^2 * CD * 0.224809;
+D = Q * 32.174 * G.S * CD;
 
 pi_c_range = linspace(5, 15, 11);
 To4_range = linspace(2000, 3000, 11);

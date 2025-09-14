@@ -34,5 +34,6 @@ function plot_lift_curve_slope(AOA, G)
     ylim([0, .1])
     yticks(0:.01:.1)
     grid on
+    theme 'light'
 
 end
