@@ -7,7 +7,7 @@ This repository includes:
  - Optimized Delta-V Apse Line Rotation Simulation
  - Optimized Non-Planar Hohmann Transfer across Earth
  - TSTO Launch Sequence then transfer to GEO orbit*
- - Circular Restricted 3-Body Problem Transfer from Earth to Moon and towards all Lagrange Points with Delta-V Optimization*
+ - Circular Restricted 3-Body Problem Transfer from Earth to Moon and towards all Lagrange Points*
  - 10-Body Problem Trajectory Simulation of Earth to Jupiter Satellite Transfer with Delta-V Optimization*
  - 15-Body Problem Trajectory Simulation of Earth to Pluto Satellite Transfer with Delta-V Optimization*
  - Reverse Engineered F-15E Aircraft Takeoff, Cruise-Climb, and Cruise Scenarios
