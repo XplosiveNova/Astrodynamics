@@ -1,1 +1,3 @@
-hii
+# Class: Astrodynamics I
+
+The mission is to design a 2-burn, non-planar Hohmann Transfer maneuver via a 2-Burn Planar Hohmann Transfer Burn. The first burn is in the intial orbit is to send the satellite into its transfer orbit, and a correction burn to park it into the final orbit. Initial and Final Orbital Data is given, and the objective is to find the optimal delta-V for initiating the ideal transfer. A delta-v of 3.364 km/s was achieved after calculating the Line of Intersection and transferring the satellite at the optimal intersection points.
