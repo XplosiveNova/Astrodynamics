@@ -11,4 +11,5 @@ This is a repository of all my Astrodynamics, GNC, &amp; Flight Performance Soft
  - Optimization Process of a supercritical airfoil section.
 
 *A majority of the source code was created by Dr. Julio Cesar Benavides at UT Arlington © 2025 and is notated as such. These programs and concepts were explained and derived in-class however and do not reflect a gap in understanding of ode45, bvp4c, etc.
+
 *However, the mission architecture was designed and created by me using learned knowledge of astrodynamics & GNC.
