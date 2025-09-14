@@ -11,7 +11,7 @@ This project is to create a brute-force optimization process to find the optimal
 
 Note that the process for calculating supersonic lift, drag, and pitching moment for a discrete airfoil was given as a .p code by Dr. Zhen Han. 
 
-An optimal Lift-Drag Ratio was found to be ~3.31 at an AOA of 6 degrees, with similar shape to modern supersonic airfoil. The objective is to better understand the design and geometric configuration of high-speed airfoils as compressibility effects were taught within the class. A better optimization method can be designed for a large amount of variables, yet the project met guidelines and thus a brute-force method that lasts ~15 minutes was enough. More detail is explained within the design report (if you're willing to read 28 pages haha)
+An optimal Lift-Drag Ratio was found to be ~3.31 at an AOA of 9.6 degrees, with similar shape to modern supersonic airfoil. The objective is to better understand the design and geometric configuration of high-speed airfoils as compressibility effects were taught within the class. A better optimization method can be designed for a large amount of variables, yet the project met guidelines and thus a brute-force method that lasts ~15 minutes was enough. More detail is explained within the design report (if you're willing to read 28 pages haha)
 
 Figure: Geometric Structure of Optimal Airfoil Section
 
