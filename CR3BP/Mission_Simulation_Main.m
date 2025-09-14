@@ -1,3 +1,7 @@
+currentFolder = fileparts(mfilename('fullpath'));
+CodePath = fullfile(currentFolder, '..', 'CodePackage');
+addpath(CodePath);
+
 tic;
 % [s]Starts the program timer.
 
@@ -149,4 +153,5 @@ fprintf(SimulationTimeString,SimulationTime);
 % []Prints the simulation time on the command window.
 
 fprintf(Equal)
+
 %===================================================================================================
