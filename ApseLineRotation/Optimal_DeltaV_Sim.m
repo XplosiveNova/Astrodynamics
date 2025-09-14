@@ -1,12 +1,3 @@
-%{
-MISSION OBJECTIVE:
-The mission is to design an apse-line rotation maneuver via a 2-Burn Hohmann
-Transfer Burn. The first burn in the intial orbit to maneuver the satellite, 
-and a correction burn to place it into the final orbit. Initial and Final 
-Orbital Data is given, and the objective is to find the optimal True Anomoly
-and delta-V for initiating an ideal Hohmann Transfer.
-%}
-
 %% GIVEN:
 format long; clc; clear; close all;
 
