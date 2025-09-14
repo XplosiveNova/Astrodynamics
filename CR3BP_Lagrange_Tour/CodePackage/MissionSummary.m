@@ -155,5 +155,12 @@ function MissionSummary(S,dv)
     fprintf(Dash);
     % []Prints the formatted string on the command window.
 
+            %-----------------------------------------------------------------------------------------------
+
+    fprintf('Total Delta-V = %.3f km/s\n'. sum(dv));
+
+    fprintf(Dash);
+    % []Prints the formatted string on the command window.
+
 end
 %===================================================================================================

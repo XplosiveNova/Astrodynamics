@@ -1,6 +1,12 @@
 # Class: Astronautics II
 
-This Project is a simulation of a satellite being sent on a single-burn tour from an initial parking LEO to the Moon, then to L1, L2, L3, L4, and L5 Lagrange Points in that order. The project used the circular-restricted 3-body problem approach to simulation taking only the gravitational affect of the Earth and Moon into account. A delta-v of the initial burn was calculated to be ~ km/s with a total mission time of xxx JD's.
+This Project is a simulation of a satellite being sent on a multi-burn tour from an initial parking LEO to the Moon, then to L1, L2, L3, L4, and L5 Lagrange Points in that order. The project used the circular-restricted 3-body problem approach to simulation taking only the gravitational affect of the Earth and Moon into account, and calculated as a boundary value problem between destination points using a semi-optimized input time for the orbit. A refinement of the input time process is necessary for more precise delta-v minimization.
+
+The total delta-v of the mission was calculated to be 6.32 km/s with a total mission time of xxx JD's.
+
+Figure: Total Orbit of Satellite
+
+
 
 PERMISSION TO USE CODE:
 
