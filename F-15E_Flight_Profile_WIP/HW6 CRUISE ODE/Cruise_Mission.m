@@ -14,27 +14,9 @@ addpath(HW5Path);
 
 [cruiseOut] = simulate_constant_velocity_constant_CL_cruise_climb(trajS, propS, G);
 
-
 figure(1)
-plot(cruiseOut.xV, cruiseOut.hV)
-figure(2)
-plot(cruiseOut.MachV, cruiseOut.hV)
-figure(3)
-plot(cruiseOut.tV, cruiseOut.hV)
-figure(4)
-plot(cruiseOut.tV, cruiseOut.xV)
-figure(5)
-plot(cruiseOut.xV, cruiseOut.WV)
-figure(6)
-plot(cruiseOut.tV, cruiseOut.fpaV)
-
-figure(7)
-plot_trajectory_variable(cruiseOut.tV, cruiseOut.POWERV, "Time", "Power", "", "", "", "")
-figure(8)
-plot_trajectory_variable(cruiseOut.tV, cruiseOut.SV, "Time", "SFC", "", "", "", "")
-figure(9)
-plot_trajectory_variable(cruiseOut.tV, cruiseOut.tVreq_engV, "Time", "Treq", "", "", "")
-figure(10)
-plot_trajectory_variable(cruiseOut.tV, cruiseOut.TV, "Time", "Thrust CUrrent", "", "", "", "")
-figure(11)
-plot_trajectory_variable(cruiseOut.tV, cruiseOut.Treq_totV, "Time", "Ttot", "", "", "", "")
+plot(cruiseOut.xV, cruiseOut.hV, 'k')
+title('Cruise-Climb Trajectory Profile', 'FontSize', 20, 'FontName', 'Arial')
+xlabel('Range (ft)', 'FontSize', 16, 'FontName', 'Arial')
+ylabel("Altitude (ft)", 'FontSize', 16, 'FontName', 'Arial')
+theme 'light'
