@@ -2,7 +2,6 @@ function [r_eci, v_eci] = COE_ECI(coe)
 
 % Transforms a set of Classical Orbital Elements into a Position and Velocity Vector
 
-format long
 u = 398600.435;
 
 p = coe(1) * (1-coe(2)^2);
