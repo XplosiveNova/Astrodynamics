@@ -15,8 +15,8 @@ addpath(HW5Path);
 [cruiseOut] = simulate_constant_velocity_constant_CL_cruise_climb(trajS, propS, G);
 
 figure(1)
-plot(cruiseOut.xV, cruiseOut.hV, 'k')
+plot(cruiseOut.xV / 1000, cruiseOut.hV / 1000, 'k')
 title('Cruise-Climb Trajectory Profile', 'FontSize', 20, 'FontName', 'Arial')
-xlabel('Range (ft)', 'FontSize', 16, 'FontName', 'Arial')
-ylabel("Altitude (ft)", 'FontSize', 16, 'FontName', 'Arial')
+xlabel('Range (kft)', 'FontSize', 16, 'FontName', 'Arial', 'FontWeight', 'bold')
+ylabel("Altitude (kft)", 'FontSize', 16, 'FontName', 'Arial', 'FontWeight', 'bold')
 theme 'light'
