@@ -2,6 +2,7 @@
 
 This is a repository of all my Astrodynamics, GNC, &amp; Flight Performance Software packages used for a variety of projects across my aerospace engineering classes. This repository includes:
 
+ - Optimized Delta-V Apse Line Rotation Simulation
  - Optimized Non-Planar Hohmann Transfer across Earth
  - TSTO Launch Sequence then transfer to GEO orbit*
  - Circular Restricted 3-Body Problem Transfer from Earth to Moon and towards all Lagrange Points with Delta-V Optimization*
