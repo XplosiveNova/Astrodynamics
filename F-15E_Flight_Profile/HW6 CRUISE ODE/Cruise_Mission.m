@@ -38,5 +38,3 @@ figure(10)
 plot_trajectory_variable(cruiseOut.tV, cruiseOut.TV, "Time", "Thrust CUrrent", "", "", "", "")
 figure(11)
 plot_trajectory_variable(cruiseOut.tV, cruiseOut.Treq_totV, "Time", "Ttot", "", "", "", "")
-
-
