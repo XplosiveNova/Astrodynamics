@@ -1,6 +1,6 @@
 # Portfolio Summary
 
-This is a repository of all my Astrodynamics, GNC, &amp; Flight Performance MATLAB Code packages used for a variety of projects across my aerospace engineering classes. The overall focus of this portfolio is to highlight the work I've done in MATLAB throughout my academic career and the skills - whether job-specific or general MATLAB knowledge - I've learned that can apply to industry.
+This is a repository of all my Astrodynamics, GNC, &amp; Flight Performance MATLAB Code packages used for a variety of projects across my aerospace engineering classes. The overall focus of this portfolio is to highlight the work I've done in MATLAB throughout my academic career and the skills - whether job-specific or general MATLAB knowledge - I've learned that can apply to industry. It is still WIP as more projects get configured to GitHub.
 
 This repository includes:
 
