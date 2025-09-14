@@ -1,4 +1,4 @@
-Class = Compressible Flow
+**Class: Compressible Flow**
 
 This project is to create a brute-force optimization process to find the optimal shape and corresponding Lift-Drag ratio for a supersonic airfoil section given the following constraints:
 
