@@ -148,17 +148,6 @@ to = [S(7).t(end),S(7).t(end) + 24 * 60^2];
 
 S(9) = R2bpPropagate(to,So,C);
 
-%% SEGMENT 10 -- JUPITER LOITER POST RENDEZVOUS
-
-% to = [S(8).t(end),S(8).t(end) + 24 * 60^2];
-% % [s]Modeling time.
-% 
-% So = S(8).S(:,end);
-% % [km,km/s]Lexicon state WRT the Earth in ECI coordinates at phasing maneuver commencement.
-% 
-% S(10) = R2bpPropagate(to,So,C);
-% % []Propagates the relative two-body problem.
-
 %% PLOT RESULTS:
 
 GR = [218, 165, 2] / 255;
@@ -167,11 +156,10 @@ GR = [218, 165, 2] / 255;
 FB = [178, 34, 34] / 255;
 % []Firebrick RGB color code.
 
-% OrbitColor = {'y',GR,FB,GR,'y',GR, FB, GR, FB, GR};
-% []Segment color code.
 OrbitColor = {GR,GR,FB,FB,GR ,GR, FB, FB, GR, GR};
+% []Segment color code.
 
-CoeColor = {'k',GR,FB,GR,'k',GR, FB, GR, FB, GR};
+CoeColor = {GR,GR,FB,FB,GR ,GR, FB, FB, GR, GR};
 % []Classical orbital elements color code.
 
 PlotOrbit(S,'Black',OrbitColor);
@@ -180,7 +168,7 @@ PlotOrbit(S,'Black',OrbitColor);
 PlotGroundTrack(S,'Black',OrbitColor);
 % []Plots the orbit's ground track.
 
-% PlotCoe(S,'Hours','Earth Radii',CoeColor);
+PlotCoe(S,'Hours','Earth Radii',CoeColor);
 % []Plots the orbit's classical orbital elements as a function of time.
 
 %% MISSION SUMMARY:
@@ -221,3 +209,4 @@ fprintf(SimulationTimeString,SimulationTime);
 % []Prints the simulation time on the command window.
 
 %===================================================================================================
+
