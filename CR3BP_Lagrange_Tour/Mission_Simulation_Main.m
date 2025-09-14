@@ -139,8 +139,6 @@ dvTotal = sum(dv);
 
 MissionSummary(S,dv)
 
-save('P3_Salcedo.mat','time');
-
 %% PRINT SIMULATION TIME:
 
 SimulationTime = toc;
@@ -155,3 +153,4 @@ fprintf(SimulationTimeString,SimulationTime);
 fprintf(Equal)
 
 %===================================================================================================
+
