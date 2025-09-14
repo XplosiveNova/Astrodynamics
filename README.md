@@ -10,6 +10,7 @@ This repository includes:
  - Circular Restricted 3-Body Problem Transfer from Earth to Moon and towards all Lagrange Points*
  - 10-Body Problem Trajectory Simulation of Earth to Jupiter Satellite Transfer with Delta-V Optimization*
  - 15-Body Problem Trajectory Simulation of Earth to Pluto Satellite Transfer with Delta-V Optimization*
+ - Spherical Harmonics Gravity Model of the Earth with Satellite Orbital Simulation
  - Reverse Engineered F-15E Aircraft Takeoff, Cruise-Climb, and Cruise Scenarios
  - Optimization Process of a supercritical airfoil section.
 
