@@ -15,6 +15,7 @@ Image: Engine Design Space Analysis
 
 <img width="1125" height="861" alt="image" src="https://github.com/user-attachments/assets/922b1ded-5ff3-4ca7-958d-ba2d0ff3bb1f" />
 
-Image: Afterburner Engine Thrust vs Mach
+Image: Cruise-Climb Flight Trajectory
 
-<img width="975" height="729" alt="image" src="https://github.com/user-attachments/assets/6cd78275-6465-44f2-b2e4-bac5d89a6f51" />
+<img width="961" height="622" alt="image" src="https://github.com/user-attachments/assets/e2a9658d-2e6a-4b81-89dc-ad62d52131a3" />
+
