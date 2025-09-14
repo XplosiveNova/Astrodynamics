@@ -28,7 +28,7 @@ alphaCruise = fsolve(@(alpha) aoa_solve(alpha, Wi, MachCruise, q, G), alpha_gues
 
 % Integrate functions
 
-opts = odeset('Events', @(t, y) terminate_range(t, y, Vcruise, Rcruise, alphaCruise, G, propS));
+opts = odeset('Events', @(t, y) terminate_range(t, y, Vcruise, Rcruise, alphaCruise, G, propS), 'RelTol', 1E-10, 'AbsTol', 1E-10);
 [t, Y] = ode45(@(t, y) cruise_eom(t, y, Vcruise, Rcruise, alphaCruise, G, propS), t_span, y0, opts);
 
 % Now you have output vectors for x, p, h, W, and t
