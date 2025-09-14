@@ -6,7 +6,7 @@ This MATLAB package includes multiple different sets of programs over aerodynami
  - Geometric Reverse Engineering of the A/C through webplotdigitizer.com
  - Calculating/Estimating the subsonic, transonic, and supersonic aerodynamic properties of the A/C including Lift and Drag
  - Parametric analysis of the Pratt & Whitney F100 engine for the aircraft
- - Simulation of the A/C during trimmed cruise conditions at constant Lift and Velocity
+ - Simulation of the A/C during Cruise-Climb conditions at constant Lift and Velocity
  - Simulation during Climb Conditions at constant EAS and throttle
 
 This code extensively used ODE45 as a numerical integrator to find the position, velocity, angle of attack, and aerodynamic forces across a trajectory profile. All code was created personally with the guidance of Dr. Ian Maynard as projects throughout the class.
