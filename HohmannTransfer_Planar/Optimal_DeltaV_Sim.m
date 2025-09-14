@@ -123,7 +123,7 @@ E_orbit1 = 2*atan(sqrt((1-e1)/(1+e1)) * tan(theta_range(index) * pi / 360));
 % [rad] Eccentric Anomoly of Initial Mission Orbit until Burn Point
 
 n = sqrt(u/a1^3);
-% [s] Mean Motion of Initial Satellite Orbit
+% [rad/s] Mean Motion of Initial Satellite Orbit
 
 orbit_time = (E_orbit1 - e1*sin(E_orbit1))/n;
 % [s] Time of Initial Satellite Orbit until Burn Point
