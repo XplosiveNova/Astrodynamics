@@ -1,4 +1,4 @@
-# Astrodynamics
+# Read Me
 
 This is a repository of all my Astrodynamics, GNC, &amp; Flight Performance MATLAB Code packages used for a variety of projects across my aerospace engineering classes. This repository includes:
 
