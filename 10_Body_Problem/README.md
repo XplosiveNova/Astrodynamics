@@ -12,7 +12,7 @@ Figure: Porkchop Plot of Launch Window
 
 Figure: Total Trajectory of Satellite
 
-<img width="1904" height="987" alt="Transfer to Jupiter (Final Solution)" src="https://github.com/user-attachments/assets/ad7d0295-b9af-435a-b036-4780d895058c" />
+<img width="924" height="925" alt="Transfer to Jupiter (Final Solution)" src="https://github.com/user-attachments/assets/e09eaa7c-5254-42c5-9bbf-dbcfe144afbe" />
 
 PERMISSION TO USE CODE:
 
