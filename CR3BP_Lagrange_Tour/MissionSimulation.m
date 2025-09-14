@@ -1,7 +1,3 @@
-currentFolder = fileparts(mfilename('fullpath'));
-CodePath = fullfile(currentFolder, '..', 'CodePackage');
-addpath(CodePath);
-
 tic;
 % [s]Starts the program timer.
 
@@ -10,6 +6,15 @@ clc;
 
 clear;
 % []Clears the variable workspace.
+
+currentFolder = fileparts(mfilename('fullpath'));
+% [] Saves current directiory location
+
+CodePath = fullfile(currentFolder, '..', 'CodePackage');
+% [] Finds path towards different folder to use software
+
+addpath(CodePath);
+% [] Adds path
 
 format('Compact');
 % []Formats the command window output to single-spaced output.

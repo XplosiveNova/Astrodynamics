@@ -16,6 +16,15 @@ format('LongG');
 close('All');
 % []Closes all figures.
 
+currentFolder = fileparts(mfilename('fullpath'));
+% [] Saves current directiory location
+
+CodePath = fullfile(currentFolder, '..', 'Mission');
+% [] Finds path towards different folder to use software
+
+addpath(CodePath);
+% [] Adds path
+
 Equal = strcat(repelem('=',100),'\n');
 % [string]Generates a string with 100 equal signs and a carriage return.
 
