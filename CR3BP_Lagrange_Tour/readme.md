@@ -6,7 +6,7 @@ The total delta-v of the mission was calculated to be 6.32 km/s with a total mis
 
 Figure: Total Orbit of Satellite
 
-<img width="1904" height="987" alt="PlotTrajectory" src="https://github.com/user-attachments/assets/5ca62ffa-3d59-4dec-8304-811b6b31715e" />
+<img width="962" height="987" alt="PlotTrajectory" src="https://github.com/user-attachments/assets/fdbc01c5-b9ec-45e4-9e45-90fceaec0d8c" />
 
 Figure: Speed of Satellite
 
