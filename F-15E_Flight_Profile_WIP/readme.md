@@ -9,7 +9,7 @@ This MATLAB package includes multiple different sets of programs over aerodynami
  - Simulation of the A/C during trimmed cruise conditions at constant Lift and Velocity
  - Simulation during Climb Conditions at constant EAS and throttle
 
-All code was created personally with the guidance of Dr. Ian Maynard as projects throughout the class.
+This code extensively used ODE45 as a numerical integrator to find the position, velocity, angle of attack, and aerodynamic forces across a trajectory profile. All code was created personally with the guidance of Dr. Ian Maynard as projects throughout the class.
 
 Image: Engine Design Space Analysis
 
@@ -18,4 +18,3 @@ Image: Engine Design Space Analysis
 Image: Afterburner Engine Thrust vs Mach
 
 <img width="975" height="729" alt="image" src="https://github.com/user-attachments/assets/6cd78275-6465-44f2-b2e4-bac5d89a6f51" />
-
