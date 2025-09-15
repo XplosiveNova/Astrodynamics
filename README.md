@@ -15,3 +15,5 @@ This repository includes:
  - Optimization Process of a supercritical airfoil section.
 
 *A majority of the source code for astrodynamics projects was created by Dr. Julio César Benavides © UT Arlington 2025, Founder and Curator of the Astronautical Engineering Archives (AEA), and is notated where necessary. These programs and concepts were explained and derived in-class however and do not reflect a gap in understanding of ode45, bvp4c, etc. The mission architecture was designed and created by me using learned knowledge of astrodynamics & GNC.
+
+Ad Astra per Aspera!
